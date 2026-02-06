@@ -79,3 +79,13 @@ input, textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+/* Footer styling for all pages */
+footer {
+  text-align: center; /* Centers the text */
+  padding: 20px; /* Space inside the footer */
+  background: #222; /* Dark background */
+  color: #fff; /* White text */
+  margin-top: 40px; /* Space above the footer */
+  font-size: 14px; /* Slightly smaller text */
+}
