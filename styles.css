@@ -1,91 +1,96 @@
-/* styles.css - Tech-Adv website basic styles */
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+/* Reset some default styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  box-sizing: border-box;
 }
 
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
 header {
-  background-color: #0a74da;
-  color: white;
+  background: #111;
+  color: #fff;
   padding: 20px 10px;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin-bottom: 10px;
+  font-size: 32px;
 }
 
-header p {
-  margin: 5px 0 0 0;
-  font-size: 1.1rem;
-}
-
-section {
-  padding: 20px 10px;
-  max-width: 800px;
-  margin: auto;
-}
-
-section h2 {
-  color: #0a74da;
-  margin-top: 0;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-a {
-  color: #0a74da;
+/* Navigation styling */
+nav a {
+  color: #fff;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-a:hover {
+nav a:hover {
+  color: #00bfff; /* Light blue hover effect */
+}
+
+/* Main content styling */
+main {
+  background: #f9f9f9;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 28px;
+}
+
+main p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Main links styling */
+main a {
+  color: #0077cc;
   text-decoration: underline;
+  transition: color 0.3s;
 }
 
+main a:hover {
+  color: #00bfff;
+}
+
+/* Footer styling */
 footer {
-  background-color: #222;
-  color: white;
-  padding: 15px 10px;
   text-align: center;
-  font-size: 0.9rem;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 2px solid #444;
 }
 
-button {
-  background-color: #0a74da;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
 
-button:hover {
-  background-color: #084c8d;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0 15px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Footer styling for all pages */
-footer {
-  text-align: center; /* Centers the text */
-  padding: 20px; /* Space inside the footer */
-  background: #222; /* Dark background */
-  color: #fff; /* White text */
-  margin-top: 40px; /* Space above the footer */
-  font-size: 14px; /* Slightly smaller text */
+  main {
+    margin: 15px 10px;
+    padding: 20px;
+  }
 }
