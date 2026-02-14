@@ -21,6 +21,8 @@
     <a href="about.html" style="color:white;margin:10px;text-decoration:none;">About</a>
     <a href="contact.html" style="color:white;margin:10px;text-decoration:none;">Contact</a>
     <a href="privacy.html" style="color:white;margin:10px;text-decoration:none;">Privacy</a>
+    <input type="text" id="searchInput" placeholder="Search site..." style="margin-left:20px;padding:5px;">
+
   </nav>
 
   <!-- Main Content -->
@@ -80,6 +82,32 @@
         .catch(err => console.log('Service Worker Failed:', err));
     }
   </script>
+
+  <script>
+const pages = [
+  { name: "Home", url: "/index.html", keywords: ["home", "welcome", "tech adv", "skills", "projects", "learning"] },
+  { name: "About", url: "/about.html", keywords: ["about", "mission", "vision", "team", "skills"] },
+  { name: "Contact", url: "/contact.html", keywords: ["contact", "email", "phone", "reach", "message"] },
+  { name: "Privacy", url: "/privacy.html", keywords: ["privacy", "policy", "data", "information"] }
+];
+
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('keypress', function(e) {
+  if(e.key === 'Enter') {
+    const query = searchInput.value.toLowerCase();
+    for(const page of pages) {
+      for(const keyword of page.keywords) {
+        if(keyword.includes(query)) {
+          window.location.href = page.url;
+          return;
+        }
+      }
+    }
+    alert('No results found.');
+  }
+});
+</script>
 
 </body>
 </html>
