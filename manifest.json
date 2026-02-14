@@ -1,0 +1,21 @@
+{
+  "name": "Tech Adv",
+  "short_name": "TechAdv",
+  "start_url": "/kasie-site.github.io/",
+  "display": "standalone",
+  "background_color": "#1E40AF",
+  "theme_color": "#1E40AF",
+  "description": "Tech Adv - Your hub for tech learning, projects, and digital growth.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
