@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Tech Adv | Skills, Knowledge & Opportunities</title>
-  <meta name="description" content="Tech Adv empowers learners with digital skills, knowledge, and real-world opportunities.">
+  <meta name="description" content="Tech Adv empowers learners with digital skills, knowledge, and real-world opportunities. Grow intellectually and professionally with our practical guidance.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#1E40AF">
 
   <!-- AdSense Verification Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2991449772584539" crossorigin="anonymous"></script>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1E40AF">
 </head>
 <body>
 
@@ -37,8 +38,6 @@
       Learning without context can be limiting. That is why Tech Adv focuses on not just teaching digital skills, but also providing insight into how these skills create opportunities. 
       From web development to coding, ethical hacking, and problem-solving, each guide is crafted to connect practical knowledge with real-world application.
     </p>
-
-    <img src="digital-skills.jpg" alt="Digital skills development illustration" width="400" style="display:block;margin:20px auto;">
 
     <p>
       We understand that information is abundant, but wisdom is rare. 
@@ -72,6 +71,15 @@
   <footer style="background:#1E40AF; color:white; text-align:center; padding:15px; margin-top:20px; font-family:sans-serif;">
     &copy; 2026 Tech Adv | All rights reserved
   </footer>
+
+  <!-- Service Worker for PWA (offline caching) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(err => console.log('Service Worker Failed:', err));
+    }
+  </script>
 
 </body>
 </html>
