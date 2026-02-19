@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Adv App</title>
-
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="manifest.json">
-
-  <!-- App Icons -->
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-  <link rel="apple-touch-icon" href="icon-192.png">
-
-  <!-- App-like Styles -->
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background-color:#f8f9fa; color:#333; }
-    header { background-color:#1a73e8; color:white; padding:15px; text-align:center; font-size:1.5rem; position:sticky; top:0; z-index:100; }
-    nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
-    nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
-    main { padding:20px; margin-bottom:60px; }
-    article { background:#fff; padding:15px; margin-bottom:15px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    h2 { margin-top:0; color:#1a73e8; }
-    p { line-height:1.6; }
-    .intro { margin-bottom:20px; }
-    a.read-more { color:#1a73e8; font-weight:bold; text-decoration:none; display:inline-block; margin-top:10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Adv App</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; color:#333; }
+  header { background:#1a73e8; color:#fff; padding:15px; text-align:center; font-size:1.5rem; position:sticky; top:0; z-index:100; }
+  nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+  nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
+  main { padding:20px; margin-bottom:60px; }
+  article { background:#fff; padding:15px; margin-bottom:15px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+  h2 { margin-top:0; color:#1a73e8; }
+  p { line-height:1.6; }
+  .intro { margin-bottom:20px; }
+  a.read-more { color:#1a73e8; font-weight:bold; text-decoration:none; display:inline-block; margin-top:10px; }
+</style>
 </head>
 <body>
 
-  <header>Tech Adv</header>
+<header>Tech Adv</header>
 
-  <main>
-    <!-- Welcome Section -->
-    <div class="intro">
-      <h2>Welcome to Tech Adv</h2>
-      <p>Tech Adv is your go-to platform for learning web development, understanding GitHub hosting, building your online presence, and monetizing with AdSense. Explore our guides, tutorials, and tips to grow your tech skills!</p>
-    </div>
+<main>
+  <!-- Welcome Section -->
+  <div class="intro">
+    <h2>Welcome to Tech Adv</h2>
+    <p>Tech Adv is your platform to learn web development, improve digital skills, and generate online income. Explore our guides and articles below to level up your tech knowledge!</p>
+  </div>
 
-    <!-- Featured Articles -->
+  <!-- Articles -->
+  <article>
+    <h2>Web Development</h2>
+    <p>Learn the fundamentals of building websites using HTML, CSS, and JavaScript. Start creating interactive and responsive websites from scratch.</p>
+    <a href="articles/web-development.html" class="read-more">Read More →</a>
+  </article>
 
-    <article>
-      <h2>Web Development Basics</h2>
-      <p>Start your journey with web development. Learn HTML, CSS, and JavaScript basics to build responsive, modern websites. Understand the structure of web pages and how to make them interactive.</p>
-      <a href="article-webdev.html" class="read-more">Read More →</a>
-    </article>
+  <article>
+    <h2>Digital Skills</h2>
+    <p>Master essential digital skills such as productivity tools, social media management, and online collaboration to excel in the tech world.</p>
+    <a href="articles/digital-skills.html" class="read-more">Read More →</a>
+  </article>
 
-    <article>
-      <h2>Understanding GitHub Hosting</h2>
-      <p>Learn how to host your website for free using GitHub Pages. Get step-by-step instructions on uploading your files, connecting custom domains, and managing versions with Git.</p>
-      <a href="article-github.html" class="read-more">Read More →</a>
-    </article>
+  <article>
+    <h2>Online Income</h2>
+    <p>Discover ways to earn online, including freelancing, AdSense, affiliate marketing, and more. Learn how to monetize your skills and website effectively.</p>
+    <a href="articles/online-income.html" class="read-more">Read More →</a>
+  </article>
 
-    <article>
-      <h2>Income with Google AdSense</h2>
-      <p>Discover how to monetize your website using Google AdSense. Learn how to integrate ads safely, understand placement strategies, and maximize your revenue from traffic.</p>
-      <a href="article-adsense.html" class="read-more">Read More →</a>
-    </article>
+</main>
 
-  </main>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="articles.html">Articles</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="articles.html">Articles</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <!-- Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('Service Worker Registered'));
-    }
-  </script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() => console.log('Service Worker Registered'));
+  }
+</script>
 
 </body>
 </html>
