@@ -1,83 +1,134 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* ================================
+   General Reset & Typography
+================================ */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================================
+   Header Styles
+================================ */
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: #0d6efd; /* Tech Adv primary blue */
+    color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 20px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
-/* Navigation */
+/* ================================
+   Navigation Styles
+================================ */
 nav {
-    background-color: #333;
-    overflow: hidden;
+    background-color: #0b5ed7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
+    padding: 15px 25px;
     text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #0956b2;
 }
 
-/* Container */
+/* ================================
+   Container / Content
+================================ */
 .container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Article Previews */
+/* ================================
+   Article Previews
+================================ */
 .article-preview {
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .article-preview h2 {
-    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0d6efd;
+}
+
+.article-preview p {
+    margin-bottom: 15px;
+    font-size: 1em;
 }
 
 .article-preview a {
-    color: #4CAF50;
+    color: #0d6efd;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 .article-preview a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* ================================
+   Footer
+================================ */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #0b5ed7;
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 10px;
     margin-top: 40px;
+    font-size: 0.95em;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        padding: 12px 18px;
+        font-size: 0.95em;
+    }
+
+    .article-preview {
+        padding: 20px 15px;
+    }
 }
