@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Tech Adv</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech Adv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon-192.png" type="image/png">
 </head>
 <body>
-  <header>
-    <h1>Contact Tech Adv</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="article1.html">Article 1</a>
-      <a href="article2.html">Article 2</a>
-      <a href="article3.html">Article 3</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
 
-  <main>
-    <p><a href="index.html" class="back-home">⬅ Back to Home</a></p>
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you! Whether you have a question about our services, want to collaborate, or just want to say hello, feel free to reach out. We value every message and will respond as quickly as possible.</p>
+            <p>You can contact us through email, phone, or social media. We’re always happy to connect!</p>
+            <ul>
+                <li>Email: <a href="mailto:techprogrammershub57@gmail.com">techprogrammershub57@gmail.com</a></li>
+                <li>Phone 1: <a href="tel:+2348141763168">08141763118</a></li>
+                <li>Phone 2: <a href="tel:+2347064301364">07064301364</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/tech.adv" target="_blank">@tech.adv</a></li>
+            </ul>
+        </section>
 
-    <article>
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:info@techadv.com">info@techadv.com</a></p>
-      <p>Follow us on social media: 
-        <a href="#" target="_blank">Twitter</a> | 
-        <a href="#" target="_blank">Facebook</a> | 
-        <a href="#" target="_blank">LinkedIn</a>
-      </p>
-    </article>
+        <section class="contact-form">
+            <h2>Send a Message</h2>
+            <form action="mailto:techprogrammershub57@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <p><a href="index.html" class="back-home">⬅ Back to Home</a></p>
-  </main>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-  <footer>
-    <p>&copy; 2026 Tech Adv</p>
-  </footer>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Adv. All rights reserved.</p>
+    </footer>
 </body>
 </html>
