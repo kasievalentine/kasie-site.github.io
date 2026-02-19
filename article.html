@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Learning, E-Commerce & Online Income</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Adv</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; color:#333; }
+  header { background:#1a73e8; color:#fff; padding:15px; text-align:center; font-size:1.5rem; position:sticky; top:0; z-index:100; }
+  main { padding:20px; margin-bottom:70px; }
+  article { background:#fff; padding:15px; margin-bottom:15px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+  h2 { margin-top:0; color:#1a73e8; }
+  a.read-more { color:#1a73e8; font-weight:bold; text-decoration:none; display:inline-block; margin-top:10px; }
+  nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+  nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>E-Learning, E-Commerce & Online Income Opportunities</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="article1.html">Article 1</a>
-      <a href="article2.html">Article 2</a>
-      <a href="article3.html">Article 3</a>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Back to Home at top -->
-    <p><a href="index.html" class="back-home">⬅ Back to Home</a></p>
+<header>Tech Adv</header>
 
-    <article>
-      <h2>Introduction</h2>
-      <p>In today’s digital world, e-learning, e-commerce, and online work provide incredible opportunities to gain skills, start businesses, and earn income from anywhere. For countries like Nigeria, these opportunities are vital to overcome limited job options.</p>
+<main>
+  <div class="intro">
+    <h2>Welcome to Tech Adv</h2>
+    <p>Your hub for learning web development, digital skills, and online income opportunities. Explore our guides to upgrade your skills and create opportunities in the digital world.</p>
+  </div>
 
-      <h2>Impact of E-Learning</h2>
-      <p>E-learning allows you to acquire knowledge and skills remotely. Platforms like <a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a>, <a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a>, and <a href="https://www.edx.org/" target="_blank" rel="noopener">edX</a> give access to coding, digital marketing, design, and more.</p>
+  <article>
+    <h2>Web Development</h2>
+    <p>Learn HTML, CSS, JavaScript, and build real websites. Improve problem-solving, logic, and digital creativity.</p>
+    <a href="articles/web-development.html" class="read-more">Read More →</a>
+  </article>
 
-      <h2>Impact of E-Commerce</h2>
-      <p>E-commerce allows individuals and businesses to sell products online. Platforms like <a href="https://www.shopify.com/" target="_blank" rel="noopener">Shopify</a>, <a href="https://www.jumia.com.ng/" target="_blank" rel="noopener">Jumia</a>, and <a href="https://www.konga.com/" target="_blank" rel="noopener">Konga</a> make starting a store easy and scalable.</p>
+  <article>
+    <h2>Digital Skills</h2>
+    <p>Master essential digital tools like Excel, Canva, and Trello to boost productivity and unlock online opportunities.</p>
+    <a href="articles/digital-skills.html" class="read-more">Read More →</a>
+  </article>
 
-      <h2>Affiliate Marketing & Online Income</h2>
-      <p>Affiliate marketing lets you earn by promoting products and earning commissions. Start with <a href="https://www.jumia.com.ng/affiliate/" target="_blank" rel="noopener">Jumia Affiliate</a>, <a href="https://affiliate.amazon.com/" target="_blank" rel="noopener">Amazon Associates</a>, or <a href="https://www.clickbank.com/" target="_blank" rel="noopener">ClickBank</a>.</p>
+  <article>
+    <h2>Online Income</h2>
+    <p>Discover ways to earn online using freelancing, AdSense, affiliate marketing, and monetizing skills effectively.</p>
+    <a href="articles/online-income.html" class="read-more">Read More →</a>
+  </article>
+</main>
 
-      <h2>Global Online Jobs</h2>
-      <p>Find real remote jobs on platforms like <a href="https://www.upwork.com/" target="_blank" rel="noopener">Upwork</a>, <a href="https://www.fiverr.com/" target="_blank" rel="noopener">Fiverr</a>, <a href="https://www.toptal.com/" target="_blank" rel="noopener">Toptal</a>, <a href="https://remoteok.io/" target="_blank" rel="noopener">RemoteOK</a>, or <a href="https://weworkremotely.com/" target="_blank" rel="noopener">We Work Remotely</a>.</p>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
 
-      <h2>How to Get Started</h2>
-      <ul>
-        <li>Sign up on e-learning platforms to gain valuable skills.</li>
-        <li>Launch your e-commerce store or sell products online.</li>
-        <li>Start affiliate marketing to earn commissions.</li>
-        <li>Join freelance platforms to find global online jobs.</li>
-        <li>Focus on your skills and build reputation to maximize income.</li>
-      </ul>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(() => console.log('Service Worker Registered'));
+}
+</script>
 
-      <h2>Take Action Now</h2>
-      <div class="cta-buttons">
-        <a href="https://www.coursera.org/" target="_blank" class="btn">Start Learning Online</a>
-        <a href="https://www.shopify.com/" target="_blank" class="btn">Start E-Commerce</a>
-        <a href="https://www.jumia.com.ng/affiliate/" target="_blank" class="btn">Start Affiliate Marketing</a>
-        <a href="https://www.upwork.com/" target="_blank" class="btn">Find Online Jobs</a>
-      </div>
-
-    </article>
-
-    <!-- Back to Home at bottom -->
-    <p><a href="index.html" class="back-home">⬅ Back to Home</a></p>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Tech Adv</p>
-  </footer>
 </body>
 </html>
