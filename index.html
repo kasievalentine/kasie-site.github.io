@@ -1,103 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Tech Adv | Skills, Knowledge & Opportunities</title>
-  <meta name="description" content="Tech Adv empowers learners with digital skills, knowledge, and real-world opportunities. Grow intellectually and professionally with our practical guidance.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- AdSense Verification Code -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2991449772584539" crossorigin="anonymous"></script>
-
-  <!-- PWA Manifest -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1E40AF">
+    <title>Skills & Opportunity</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Learn digital skills, education tips and online income strategies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation with Search -->
-  <nav style="background:#1E40AF;padding:10px;text-align:center;">
-    <a href="index.html" style="color:white;margin:10px;text-decoration:none;">Home</a>
-    <a href="about.html" style="color:white;margin:10px;text-decoration:none;">About</a>
-    <a href="contact.html" style="color:white;margin:10px;text-decoration:none;">Contact</a>
-    <a href="privacy.html" style="color:white;margin:10px;text-decoration:none;">Privacy</a>
-    <input type="text" id="searchInput" placeholder="Search site..." style="margin-left:20px;padding:5px;">
-  </nav>
+<header>
+    <h1>Skills & Opportunity</h1>
+    <p>Digital Skills | Education | Online Income</p>
+</header>
 
-  <!-- Main Content -->
-  <main style="padding:20px; font-family:sans-serif; line-height:1.7; max-width:900px; margin:auto;">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="article1.html">Web Development</a>
+    <a href="article2.html">Digital Skills</a>
+    <a href="article3.html">Online Income</a>
+</nav>
 
-    <h1>Welcome to Tech Adv</h1>
+<div class="container">
 
-    <p>
-      At Tech Adv, we believe that knowledge is the bridge between potential and achievement. 
-      In an increasingly digital world, the ability to acquire and apply skills thoughtfully is what separates mere learners from innovators. 
-      Our platform exists to provide a structured yet flexible path for anyone determined to grow intellectually and professionally.
-    </p>
+    <div class="article-preview">
+        <h2>How to Learn Web Development from Scratch</h2>
+        <p>Web development is one of the most valuable skills you can learn today...</p>
+        <a href="article1.html">Read More</a>
+    </div>
 
-    <p>
-      Learning without context can be limiting. That is why Tech Adv focuses on not just teaching digital skills, but also providing insight into how these skills create opportunities. 
-      From web development to coding, ethical hacking, and problem-solving, each guide is crafted to connect practical knowledge with real-world application.
-    </p>
+    <div class="article-preview">
+        <h2>5 Digital Skills You Can Learn with Just a Laptop</h2>
+        <p>You don’t need expensive tools to start building your future...</p>
+        <a href="article2.html">Read More</a>
+    </div>
 
-    <p>
-      We understand that information is abundant, but wisdom is rare. 
-      Our content encourages reflection, strategic thinking, and intentional application. 
-      By presenting lessons in a concise, intellectual, and accessible manner, we aim to help learners not just acquire skills, but also understand the underlying principles and reasoning behind them.
-    </p>
+    <div class="article-preview">
+        <h2>How Students Can Earn Online Without Scams</h2>
+        <p>Many students want to earn money online but fear scams...</p>
+        <a href="article3.html">Read More</a>
+    </div>
 
-    <p>
-      Beyond technical skills, Tech Adv highlights the pathways to applying knowledge ethically and effectively. 
-      We provide guidance on remote work, freelancing, online collaborations, and safe digital practices — ensuring that every skill learned has tangible value in the real world.
-    </p>
+</div>
 
-    <p>
-      Join a community of thinkers, doers, and innovators who use Tech Adv as their launchpad. 
-      By combining knowledge with thoughtful application, learners can transform ideas into reality, turning skills into opportunities, and challenges into achievements.
-    </p>
-
-  </main>
-
-  <!-- Footer -->
-  <footer style="background:#1E40AF; color:white; text-align:center; padding:15px; margin-top:20px; font-family:sans-serif;">
-    &copy; 2026 Tech Adv | All rights reserved
-  </footer>
-
-  <!-- Site Search Script -->
-  <script>
-    const pages = [
-      { name: "Home", url: "/index.html", keywords: ["home","welcome","tech adv","skills","projects","learning"] },
-      { name: "About", url: "/about.html", keywords: ["about","mission","vision","team","skills"] },
-      { name: "Contact", url: "/contact.html", keywords: ["contact","email","phone","reach","message"] },
-      { name: "Privacy", url: "/privacy.html", keywords: ["privacy","policy","data","information"] }
-    ];
-
-    const searchInput = document.getElementById('searchInput');
-
-    searchInput.addEventListener('keypress', function(e) {
-      if(e.key === 'Enter') {
-        const query = searchInput.value.toLowerCase();
-        for(const page of pages) {
-          for(const keyword of page.keywords) {
-            if(keyword.includes(query)) {
-              window.location.href = page.url;
-              return;
-            }
-          }
-        }
-        alert('No results found.');
-      }
-    });
-  </script>
-
-  <!-- Service Worker for PWA -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(() => console.log('Service Worker Registered'))
-        .catch(err => console.log('Service Worker Failed:', err));
-    }
-  </script>
+<footer>
+    <p>&copy; 2026 Skills & Opportunity</p>
+</footer>
 
 </body>
 </html>
