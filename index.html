@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tech Adv App</title>
+<title>Tech Adv</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
@@ -11,14 +11,12 @@
 <style>
   body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; color:#333; }
   header { background:#1a73e8; color:#fff; padding:15px; text-align:center; font-size:1.5rem; position:sticky; top:0; z-index:100; }
-  nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
-  nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
-  main { padding:20px; margin-bottom:60px; }
+  main { padding:20px; margin-bottom:70px; }
   article { background:#fff; padding:15px; margin-bottom:15px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
   h2 { margin-top:0; color:#1a73e8; }
-  p { line-height:1.6; }
-  .intro { margin-bottom:20px; }
   a.read-more { color:#1a73e8; font-weight:bold; text-decoration:none; display:inline-block; margin-top:10px; }
+  nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+  nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
 </style>
 </head>
 <body>
@@ -26,44 +24,41 @@
 <header>Tech Adv</header>
 
 <main>
-  <!-- Welcome Section -->
   <div class="intro">
     <h2>Welcome to Tech Adv</h2>
-    <p>Tech Adv is your platform to learn web development, improve digital skills, and generate online income. Explore our guides and articles below to level up your tech knowledge!</p>
+    <p>Your hub for learning web development, digital skills, and online income opportunities. Explore our guides to upgrade your skills and create opportunities in the digital world.</p>
   </div>
 
-  <!-- Articles -->
   <article>
     <h2>Web Development</h2>
-    <p>Learn the fundamentals of building websites using HTML, CSS, and JavaScript. Start creating interactive and responsive websites from scratch.</p>
+    <p>Learn HTML, CSS, JavaScript, and build real websites. Improve problem-solving, logic, and digital creativity.</p>
     <a href="articles/web-development.html" class="read-more">Read More →</a>
   </article>
 
   <article>
     <h2>Digital Skills</h2>
-    <p>Master essential digital skills such as productivity tools, social media management, and online collaboration to excel in the tech world.</p>
+    <p>Master essential digital tools like Excel, Canva, and Trello to boost productivity and unlock online opportunities.</p>
     <a href="articles/digital-skills.html" class="read-more">Read More →</a>
   </article>
 
   <article>
     <h2>Online Income</h2>
-    <p>Discover ways to earn online, including freelancing, AdSense, affiliate marketing, and more. Learn how to monetize your skills and website effectively.</p>
+    <p>Discover ways to earn online using freelancing, AdSense, affiliate marketing, and monetizing skills effectively.</p>
     <a href="articles/online-income.html" class="read-more">Read More →</a>
   </article>
-
 </main>
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="articles.html">Articles</a>
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy</a>
 </nav>
 
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(() => console.log('Service Worker Registered'));
-  }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(() => console.log('Service Worker Registered'));
+}
 </script>
 
 </body>
