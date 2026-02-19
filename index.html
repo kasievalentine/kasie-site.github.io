@@ -1,131 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>@ Tech Adv | Learn Tech & Programming</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Adv App</title>
 
-    <!-- SEO -->
-    <meta name="description" content="@ Tech Adv - Learn programming, web development, and technology with practical step-by-step guides. Build skills that create opportunities.">
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-    <!-- Favicon -->
-    <link rel="icon" href="icon-192.png">
+  <!-- App Icons -->
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-
-        header {
-            background: #0d1117;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #161b22;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #58a6ff;
-        }
-
-        .container {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .article-card {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .article-card h3 {
-            margin-top: 0;
-        }
-
-        .article-card a {
-            text-decoration: none;
-            color: #0d6efd;
-            font-weight: bold;
-        }
-
-        footer {
-            background: #0d1117;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 600px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-        }
-    </style>
+  <!-- App-like Styles -->
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background-color:#f8f9fa; color:#333; }
+    header { background-color:#1a73e8; color:white; padding:15px; text-align:center; font-size:1.5rem; position:sticky; top:0; z-index:100; }
+    nav { display:flex; justify-content:space-around; background:#fff; border-top:1px solid #ccc; position:fixed; bottom:0; width:100%; padding:10px 0; box-shadow:0 -2px 5px rgba(0,0,0,0.1); }
+    nav a { text-decoration:none; color:#1a73e8; font-weight:bold; font-size:0.9rem; }
+    main { padding:20px; margin-bottom:60px; }
+    article { background:#fff; padding:15px; margin-bottom:15px; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    h2 { margin-top:0; color:#1a73e8; }
+    p { line-height:1.6; }
+    .intro { margin-bottom:20px; }
+  </style>
 </head>
-
 <body>
 
-<header>
-    <h1>@ Tech Adv</h1>
-    <p>Technology Advice. Practical Skills. Real Growth.</p>
-</header>
+  <header>Tech Adv</header>
 
-<nav>
+  <main>
+    <!-- Intro Section -->
+    <div class="intro">
+      <h2>Welcome to Tech Adv</h2>
+      <p>Tech Adv is your go-to platform for learning web development, understanding GitHub hosting, building your online presence, and monetizing with AdSense. Whether you’re a beginner or aiming to level up your tech skills, we provide easy-to-follow guides and resources.</p>
+    </div>
+
+    <!-- Featured Articles -->
+    <article>
+      <h2>Web Development Basics</h2>
+      <p>Learn the fundamentals of HTML, CSS, and JavaScript to start building your own websites today.</p>
+      <a href="article1.html">Read More →</a>
+    </article>
+
+    <article>
+      <h2>Understanding GitHub Hosting</h2>
+      <p>Step-by-step guide on how to host your website using GitHub Pages, including custom domains and version control.</p>
+      <a href="article2.html">Read More →</a>
+    </article>
+
+    <article>
+      <h2>Monetizing with Google AdSense</h2>
+      <p>Learn how to add AdSense to your website to start earning revenue from your content.</p>
+      <a href="article3.html">Read More →</a>
+    </article>
+
+    <article>
+      <h2>Progressive Web Apps (PWA)</h2>
+      <p>Make your website feel like a mobile app with offline support, home screen icons, and app-like navigation.</p>
+      <a href="article4.html">Read More →</a>
+    </article>
+  </main>
+
+  <nav>
     <a href="index.html">Home</a>
-    <a href="article1.html">Articles</a>
+    <a href="articles.html">Articles</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-</nav>
+  </nav>
 
-<div class="container">
-
-    <h2>Latest Articles</h2>
-
-    <div class="article-card">
-        <h3>Getting Started with Web Development</h3>
-        <p>Learn the basics of HTML and how to build your first website.</p>
-        <a href="article1.html">Read More →</a>
-    </div>
-
-    <div class="article-card">
-        <h3>Understanding GitHub Hosting</h3>
-        <p>Learn how to upload and host your website for free using GitHub Pages.</p>
-        <a href="article2.html">Read More →</a>
-    </div>
-
-    <div class="article-card">
-        <h3>Preparing Your Website for Adsense</h3>
-        <p>Step-by-step guide to making your website ready for monetization.</p>
-        <a href="article3.html">Read More →</a>
-    </div>
-
-</div>
-
-<footer>
-    <p>© 2026 @ Tech Adv. All rights reserved.</p>
-</footer>
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker Registered'));
+    }
+  </script>
 
 </body>
 </html>
