@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Tech Adv</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon-192.png" type="image/png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Tech Adv</title>
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="manifest" href="manifest.json">
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f8f9fa;color:#333;padding:20px;}
+header{background:#1a73e8;color:#fff;padding:15px;text-align:center;font-size:1.5rem;}
+h1{color:#1a73e8;}
+p, .contact-info{line-height:1.6;margin-bottom:15px;}
+.contact-info strong{display:inline-block;width:120px;}
+form{display:flex;flex-direction:column;max-width:500px;margin-top:20px;}
+input,textarea{margin-bottom:15px;padding:10px;font-size:1rem;border:1px solid #ccc;border-radius:8px;}
+button{padding:10px;background:#1a73e8;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
+button:hover{background:#155ab6;}
+nav{display:flex;justify-content:space-around;background:#fff;border-top:1px solid #ccc;position:fixed;bottom:0;width:100%;padding:10px 0;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+nav a{text-decoration:none;color:#1a73e8;font-weight:bold;font-size:0.9rem;}
+a{color:#1a73e8;text-decoration:none;}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-    </header>
 
-    <main>
-        <section class="contact-info">
-            <h2>Get in Touch</h2>
-            <p>We’d love to hear from you! Whether you have a question about our services, want to collaborate, or just want to say hello, feel free to reach out. We value every message and will respond as quickly as possible.</p>
-            <p>You can contact us through email, phone, or social media. We’re always happy to connect!</p>
-            <ul>
-                <li>Email: <a href="mailto:techprogrammershub57@gmail.com">techprogrammershub57@gmail.com</a></li>
-                <li>Phone 1: <a href="tel:+2348141763168">08141763118</a></li>
-                <li>Phone 2: <a href="tel:+2347064301364">07064301364</a></li>
-                <li>Instagram: <a href="https://www.instagram.com/tech.adv" target="_blank">@tech.adv</a></li>
-            </ul>
-        </section>
+<header>Contact Tech Adv</header>
 
-        <section class="contact-form">
-            <h2>Send a Message</h2>
-            <form action="mailto:techprogrammershub57@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+<main>
+<h1>Contact Us</h1>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+<div class="contact-info">
+  <p><strong>Email:</strong> <a href="mailto:techprogrammershub57@gmail.com">techprogrammershub57@gmail.com</a></p>
+  <p><strong>Phone:</strong> <a href="tel:+2348141763118">08141763118</a></p>
+</div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+<p>Contacting us is important because as you go through the processes of learning web development, digital skills, and online income strategies, questions, clarifications, and guidance may arise. Whether you are stuck on a step, need additional resources, or want advice on applying these skills in real-life situations, we are here to help you succeed.</p>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+<p>We encourage you to reach out whenever you need:</p>
+<ul>
+  <li>Clarification on any tutorials or guides</li>
+  <li>Advice on skill-building strategies</li>
+  <li>Guidance on applying skills for online opportunities</li>
+  <li>Support with challenges during projects or learning exercises</li>
+</ul>
 
-    <footer>
-        <p>&copy; 2026 Tech Adv. All rights reserved.</p>
-    </footer>
+<p>If you have questions, suggestions, or want to reach out, please use the form below:</p>
+
+<form action="mailto:techprogrammershub57@gmail.com" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<p><a href="index.html">← Back to Home</a></p>
+</main>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
+
 </body>
 </html>
